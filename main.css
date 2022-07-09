@@ -1,0 +1,175 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+
+}
+
+
+body {
+    max-width: 120rem;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: #030C2E;
+}
+
+
+
+.header {
+    padding: 1.6rem 4rem 0 ;
+    height: 9.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: 1.6rem;
+}
+
+.logo {
+    height:6.6rem;
+
+}
+
+
+
+
+.btn:visited,
+.btn:link,
+.list-link:visited,
+.list-link:link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight:500 ;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.list-link:active,
+.list-link:hover {
+    color: #304799;
+}
+
+
+
+.hero {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.img {
+    /* width: 44rem; */
+    width: 100%;
+}
+
+.text-hero {
+    width: 45rem;
+}
+
+.heading-primary {
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.6rem;
+}
+
+.pra-hero {
+    font-size: 2rem;
+    letter-spacing: -0.1rem;
+    line-height: 1.6;
+}
+
+.btn:visited,
+.btn:link {
+
+    background-color: #122052;
+    color: #FFFFFF;
+    margin-top: 2.6rem ;
+    padding: 1.6rem 3.2rem;
+    border-radius: 20px;
+
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #FFFFFF;
+    color: rgba(18, 32, 82, 0.651);
+    box-shadow: inset 0 0 0 0.4rem rgba(18, 32, 82, 0.651)
+    ;}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:57.5em) {
+    html {
+        font-size: 50%;
+    }
+    .hero {
+        max-width: 100rem ;
+        padding: 0 3.5rem;
+    }
+
+    .img-hero {
+        width: 34rem;
+    }
+}
+
+@media (max-width:45.6em) {
+    .text-hero {
+        width: 40rem;
+    }
+    .heading-primary {
+        font-size: 3.5rem;
+
+    }
+
+    .pra-hero {
+        font-size: 1.5rem;
+
+    }
+    .img-hero {
+        width: 25rem;
+    }
+
+}
+
+
+@media (max-width: 40em) {
+    .hero {
+    grid-template-columns: 1fr;
+        /* padding: 0 2.5rem; */
+        column-gap: 2rem;
+    }
+    .img-hero {
+        width: 40rem;
+    }
+    .text-hero {
+        text-align: center;
+    }
+    .nav {
+        visibility: hidden;
+    }
+}
